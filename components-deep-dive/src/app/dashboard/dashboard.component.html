@@ -1,0 +1,11 @@
+<app-dashboard-item imgSrc="status.png" title="server status">
+  <app-server-status />
+</app-dashboard-item>
+
+<app-dashboard-item imgSrc="globe.png" title="traffic">
+  <app-chart [trafficData]="dummyTrafficData" />
+</app-dashboard-item>
+
+<app-dashboard-item imgSrc="list.png" title="tickets">
+  <app-tickets />
+</app-dashboard-item>

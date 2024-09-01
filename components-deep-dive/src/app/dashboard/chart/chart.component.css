@@ -1,0 +1,26 @@
+:host {
+  display: block;
+  width: 15rem;
+}
+
+#chart {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.5rem;
+  height: 10rem;
+  padding: 0 0.5rem;
+  border-bottom: 1px solid #76737a;
+}
+
+#chart div {
+  background: linear-gradient(to bottom, #36166f, #ca19a4);
+  flex: 1;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+@media (min-width: 768px) {
+  :host {
+    width: 20rem;
+  }
+}

@@ -1,0 +1,6 @@
+<p>Last 7 days</p>
+<div id="chart">
+  @for (traffic of trafficData; track traffic.id) {
+  <div [style.height]="(traffic.value / maxTraffic) * 100 + '%'"></div>
+  }
+</div>

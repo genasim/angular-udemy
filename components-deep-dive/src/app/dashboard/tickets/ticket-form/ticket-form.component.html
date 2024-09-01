@@ -1,0 +1,11 @@
+<form (ngSubmit)="onSubmit(titleDOM)">
+  <app-control label="Title">
+    <input type="text" name="title" id="title" #titleDOM />
+  </app-control>
+  <app-control label="Request">
+    <textarea name="request" id="request" rows="3"></textarea>
+  </app-control>
+  <p>
+    <app-button type="submit" title="Submit" icon="box-arrow-up-right" />
+  </p>
+</form>

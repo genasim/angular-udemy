@@ -1,0 +1,17 @@
+form {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  width: 15rem;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #4f4b53;
+  font: inherit;
+  font-size: 0.9rem;
+}
