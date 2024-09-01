@@ -1,0 +1,24 @@
+<section id="tasks">
+  <menu>
+    <header>
+      <h2>{{ user.name }}'s tasks</h2>
+      <button (click)="handleTaskDialogOpen()">Add task</button>
+    </header>
+    @if (isAdding) {
+    <app-new-task
+      (close)="handleTaskCreateCancel()"
+      (create)="handleTaskCreate($event)"
+    />
+    }
+  </menu>
+
+  <ul>
+    @for (task of selectedUserTasks; track task.id) {
+    <li>
+      <app-card>
+        <app-task [task]="task" />
+      </app-card> 
+    </li>
+    }
+  </ul>
+</section>
